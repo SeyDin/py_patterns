@@ -20,14 +20,16 @@ class A:
             print(i+1)
             time.sleep(1)
 
+
     # тут не получится получить инфу о классе
     @staticmethod
     @time_measure
-    def count_to(sec: int):
+    def count_to_(sec: int):
         for i in range(sec):
             print(i + 1)
             time.sleep(1)
 
 
 if __name__ == '__main__':
-    A.count_to(3)
+    a = A()
+    print(a.count_to(3))
